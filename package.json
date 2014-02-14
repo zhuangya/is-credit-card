@@ -1,0 +1,27 @@
+{
+  "name": "is-credit-card",
+  "version": "0.0.1",
+  "description": "a simple script for verifying credit card number.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zhuangya/is-credit-card"
+  },
+  "keywords": [
+    "credit",
+    "card",
+    "verify"
+  ],
+  "author": "Ya Zhuang <zhuangya@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhuangya/is-credit-card/issues"
+  },
+  "homepage": "https://github.com/zhuangya/is-credit-card",
+  "devDependencies": {
+    "mocha": "~1.17.1"
+  }
+}
