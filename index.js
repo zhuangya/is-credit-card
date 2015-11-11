@@ -1,24 +1,18 @@
-module.exports = function (cardNumber) {
+'use strict';
+
+module.exports = function isCreditCard (cardNumber) {
   cardNumber = cardNumber.split('');
-  var i;
-  for (i = 0, l = cardNumber.length; i < l; i ++) {
-    if (i % 2 === 0) {
-      cardNumber[i] = cardNumber[i] * 2;
-    }
+  if (cardNumber.length !== 16) {
+    throw new Error('invalid card number');
   }
 
-  return sumString(cardNumber.join('')) % 10 === 0;
+  return cardNumber.map(function (num, index) {
+    return (index % 2 === 0 ? num * 2 : num).toString();
+  }).reduce(function (soFar, strnum) {
+    strnum.split('').forEach(function (sn) {
+      soFar = soFar + parseInt(sn, 10);
+    });
 
+    return soFar;
+  }, 0) % 10 === 0;
 };
-
-
-function sumString(string) {
-  var s = string.split('');
-  var i;
-  var result = 0;
-  for (i = 0, l = s.length; i < l; i++) {
-    result = result + ~~s[i];
-  }
-
-  return result;
-}
