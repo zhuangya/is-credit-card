@@ -1,5 +1,5 @@
 var assert = require('assert');
-var isCredit = require('.');
+var isCredit = require('./index');
 
 describe('isCreditCard', function () {
   it('should throw error when credit card is invalid', function () {
