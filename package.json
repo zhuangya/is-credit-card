@@ -1,6 +1,6 @@
 {
   "name": "is-credit-card",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "a simple script for verifying credit card number.",
   "main": "index.js",
   "scripts": {
