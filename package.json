@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/zhuangya/is-credit-card",
   "devDependencies": {
-    "jest": "24.9.0"
+    "jest": "26.0.1"
   }
 }
